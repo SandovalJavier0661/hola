@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coyote Vs Acme - Cinépolis</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background-color: #f0f4f8;
+                text-align: center;
+            }
+
+            header {
+                background-color: #0b2545;
+                padding: 25px;
+                color: white;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 36px;
+            }
+
+            header h2 {
+                margin: 8px 0 0 0;
+                font-size: 16px;
+                font-weight: normal;
+                color: #e0e0e0;
+            }
+
+            nav {
+                background-color: #134074;
+                padding: 12px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 18px;
+                display: inline-block;
+                font-size: 15px;
+            }
+
+            .contenedor-pelicula {
+                width: 600px;
+                margin: 30px auto;
+                text-align: center;
+            }
+
+            .contenedor-pelicula h2 {
+                color: #0b2545;
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .poster-grande {
+                width: 260px;
+                height: 380px;
+                margin-bottom: 20px;
+            }
+
+            .info-pelicula {
+                text-align: justify;
+                color: #333;
+                font-size: 15px;
+                margin-bottom: 25px;
+            }
+
+            .formulario-compra {
+                text-align: left;
+                width: 100%;
+            }
+
+            .formulario-compra label {
+                display: block;
+                margin-top: 12px;
+                font-weight: bold;
+                color: #0b2545;
+            }
+
+            .formulario-compra select, 
+            .formulario-compra input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+            }
+
+            .btn-comprar {
+                background-color: #0b2545;
+                color: white;
+                border: none;
+                padding: 12px;
+                width: 100%;
+                margin-top: 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            footer {
+                background-color: #0b2545;
+                padding: 15px;
+                text-align: center;
+                color: white;
+                margin-top: 40px;
+            }
+
+            footer p {
+                margin: 4px 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Cinépolis</h1>
+            <h2>La Capital del Cine</h2>
+        </header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Próximos Estrenos</a>
+            <a href="login.html">Club Cinépolis</a>
+        </nav>
+
+        <div class="contenedor-pelicula">
+            <h2>Coyote Vs Acme</h2>
+            
+            <img src="coyotevsacme.jpg" alt="Poster Coyote Vs Acme" class="poster-grande">
+
+            <div class="info-pelicula">
+                <p><b>Director:</b> Dave Green</p>
+                <p><b>Año:</b> 2026</p>
+                <p><b>Sinopsis:</b> Tras décadas de explosiones por productos defectuosos y cansado de caídas al abismo, Wile E. Coyote decide demandar a ACME. El coyote más emblemático junto con el universo de los Looney Toones, está decidido a desmantelar un imperio y enfrentar a su implacable CEO (John Cena). Esta batalla, destruirá a una leyenda... o a una corporación. La película que ACME NO QUIERE QUE VEAS.</p>
+            </div>
+
+            <hr>
+
+            <form action="login.html" method="GET" class="formulario-compra">
+                
+                <label for="cine">Selecciona el Cine:</label>
+                <select id="cine" name="cine">
+                    <option value="patio">Cinépolis Gran Patio</option>
+                    <option value="misiones">Cinépolis Las Misiones</option>
+                    <option value="torres">Cinépolis Las Torres</option>
+                    <option value="pinocelli">Cinépolis Pinocelli</option>
+                    <option value="misiones-vip">Cinépolis Las Misiones VIP</option>
+                </select>
+
+                <label for="horario">Selecciona el Horario:</label>
+                <select id="horario" name="horario">
+                    <option value="11:50">11:50 hrs</option>
+                    <option value="14:05">14:05 hrs</option>
+                    <option value="16:35">16:35 hrs</option>
+                    <option value="19:10">19:10 hrs</option>
+                </select>
+
+                <label for="asientos">Cantidad de Asientos:</label>
+                <input type="number" id="asientos" name="asientos" min="1" max="10" value="1">
+
+                <button type="submit" class="btn-comprar">Comprar Boletos</button>
+
+            </form>
+        </div>
+
+        <footer>
+            <p>López Martínez Genesis</p>
+            <p>24308051280586</p>
+            <p>5ºI</p>
+        </footer>
+
+    </body>
+</html>
